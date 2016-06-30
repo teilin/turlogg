@@ -24,7 +24,7 @@ To configure the secret values, use the user-secret command, e.g.:
 
 > dotnet user-secrets set ConnectionStrings:DefaultConnection <ConnectionStrings>
 
-and
+or
 
 > dotnet user-secrets set AppSettings:NasjonalTurbaseApiKey <NasjonalTurbaseApiKey>
 
