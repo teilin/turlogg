@@ -12,21 +12,15 @@ Production: http://turlogg.teilin.net
 
 To set the enviroment, use the enviroment variables on the platform:
 
->REM On Windows
-> set ASPNETCORE_ENVIRONMENT=Development
-
-or
-
-> REM On OSX
-> export ASPNETCORE_ENVIRONMENT=Development
+  REM On Windows
+  set ASPNETCORE_ENVIRONMENT=Development
+  REM On OSX
+  export ASPNETCORE_ENVIRONMENT=Development
 
 To configure the secret values, use the user-secret command, e.g.:
 
-> dotnet user-secrets set ConnectionStrings:DefaultConnection <ConnectionStrings>
-
-or
-
-> dotnet user-secrets set AppSettings:NasjonalTurbaseApiKey <NasjonalTurbaseApiKey>
+  dotnet user-secrets set ConnectionStrings:DefaultConnection ConnectionStrings
+  dotnet user-secrets set AppSettings:NasjonalTurbaseApiKey NasjonalTurbaseApiKey
 
 #Resources
 
