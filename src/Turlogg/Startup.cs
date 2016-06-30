@@ -26,12 +26,13 @@ namespace WebApplication
 
             if (env.IsDevelopment())
             {
-                // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
             }
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            Console.WriteLine(@"EnvironmentName: " + env.EnvironmentName);
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -41,7 +42,7 @@ namespace WebApplication
         {
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
