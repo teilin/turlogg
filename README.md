@@ -15,16 +15,17 @@ To set the enviroment, use the enviroment variables on the platform:
 >REM On Windows
 > set ASPNETCORE_ENVIRONMENT=Development
 
+or
+
 > REM On OSX
 > export ASPNETCORE_ENVIRONMENT=Development
 
 To configure the secret values, use the user-secret command, e.g.:
 
-> dotnet user-secrets set AppSettings:PgUser <theuser>
-> dotnet user-secrets set AppSettings:PgPwd <thepassword>
-> dotnet user-secrets set AppSettings:PgHost <thehost>
-> dotnet user-secrets set AppSettings:PgPort <theport>
-> dotnet user-secrets set AppSettings:PgDatabase <thedatabase>
+> dotnet user-secrets set ConnectionStrings:DefaultConnection <ConnectionStrings>
+
+and
+
 > dotnet user-secrets set AppSettings:NasjonalTurbaseApiKey <NasjonalTurbaseApiKey>
 
 #Resources
