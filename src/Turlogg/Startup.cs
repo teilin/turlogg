@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using WebApplication.Data;
-using WebApplication.Models;
-using WebApplication.Services;
+using no.teilin.turlogg.Data;
+using no.teilin.turlogg.Models;
+using no.teilin.turlogg.Services;
 
-namespace WebApplication
+namespace no.teilin.turlogg
 {
     public class Startup
     {

@@ -15,6 +15,7 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
+    "Dapper": "1.50.0-rc3",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.Extensions.Configuration.Binder": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
@@ -108,6 +109,6 @@
   },
 
   "tooling": {
-    "defaultNamespace": "WebApplication"
+    "defaultNamespace": "no.teilin.turlogg"
   }
 }

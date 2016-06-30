@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication.Models.ManageViewModels
+namespace no.teilin.turlogg.Models.ManageViewModels
 {
     public class FactorViewModel
     {

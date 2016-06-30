@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using WebApplication.Models;
-using WebApplication.Models.AccountViewModels;
-using WebApplication.Services;
+using no.teilin.turlogg.Models;
+using no.teilin.turlogg.Models.AccountViewModels;
+using no.teilin.turlogg.Services;
 
-namespace WebApplication.Controllers
+namespace no.teilin.turlogg.Controllers
 {
     [Authorize]
     public class AccountController : Controller

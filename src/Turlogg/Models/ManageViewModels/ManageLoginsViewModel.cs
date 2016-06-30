@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace WebApplication.Models.ManageViewModels
+namespace no.teilin.turlogg.Models.ManageViewModels
 {
     public class ManageLoginsViewModel
     {

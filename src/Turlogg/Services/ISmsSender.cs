@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication.Services
+namespace no.teilin.turlogg.Services
 {
     public interface ISmsSender
     {

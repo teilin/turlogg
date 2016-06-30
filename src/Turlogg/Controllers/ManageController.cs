@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WebApplication.Models;
-using WebApplication.Models.ManageViewModels;
-using WebApplication.Services;
+using no.teilin.turlogg.Models;
+using no.teilin.turlogg.Models.ManageViewModels;
+using no.teilin.turlogg.Services;
 
-namespace WebApplication.Controllers
+namespace no.teilin.turlogg.Controllers
 {
     [Authorize]
     public class ManageController : Controller

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebApplication.Models;
+using no.teilin.turlogg.Models;
 
-namespace WebApplication.Data
+namespace no.teilin.turlogg.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

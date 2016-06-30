@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplication
+namespace no.teilin.turlogg
 {
   public class AppSettings
   {
