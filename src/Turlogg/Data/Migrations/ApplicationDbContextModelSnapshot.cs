@@ -122,7 +122,7 @@ namespace no.teilin.turlogg.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("WebApplication.Models.ApplicationUser", b =>
+            modelBuilder.Entity("no.teilin.turlogg.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
 
@@ -180,7 +180,7 @@ namespace no.teilin.turlogg.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("WebApplication.Models.ApplicationUser")
+                    b.HasOne("no.teilin.turlogg.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -188,7 +188,7 @@ namespace no.teilin.turlogg.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("WebApplication.Models.ApplicationUser")
+                    b.HasOne("no.teilin.turlogg.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -201,7 +201,7 @@ namespace no.teilin.turlogg.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("WebApplication.Models.ApplicationUser")
+                    b.HasOne("no.teilin.turlogg.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
